@@ -1,0 +1,36 @@
+{
+    "name": "splittlogic/past",
+    "description": "Political Aggregating Scripts Toolkit",
+    "keywords": [
+        "splittlogic",
+        "past"
+    ],
+    "homepage": "https://github.com/splittlogic/past",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "SplittLogic",
+            "email": "SplittLogic@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "splittlogic\\past\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "splittlogic\\past\\pastServiceProvider"
+            ],
+            "aliases": {
+                "past": "splittlogic\\past\\Facades\\past"
+            }
+        }
+    }
+}
